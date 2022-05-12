@@ -58,7 +58,7 @@ class Main
 		}
 	}
 
-	static void printArray(int numbers[])
+	static void print(int numbers[])
 	{
 		int n = numbers.length;
 		for (int i = 0; i < n; ++i)
@@ -81,12 +81,12 @@ class Main
     }
 
 		System.out.println("Random Array:");
-		printArray(numbers);
+		print(numbers);
 
 		Main sorter = new Main();
 		sorter.sort(numbers, 0, numbers.length - 1);
 
 		System.out.println("Sorted Array:");
-		printArray(numbers);
+		print(numbers);
 	}
 }
